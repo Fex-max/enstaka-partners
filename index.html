@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enstaka Partners specializes in consumer market data processing and preparation across the Nordic region. Join our innovative team!">
     <title>Enstaka Partners</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <style>
         @font-face {
             font-family: 'Avenir Next Arabic';
-            src: url('path-to-your-font-file.woff2') format('woff2');
+            src: url('path-to-your-font-file.woff2') format('woff2'),
+                 url('path-to-your-font-file.woff') format('woff'),
+                 url('path-to-your-font-file.ttf') format('truetype');
         }
 
         body {
@@ -25,13 +28,13 @@
             box-sizing: border-box;
             background-color: #1a1a1a;
         }
-
+        
         .header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 1200px; /* Match the main content container width */
-            margin: 0 auto; /* Center the header */
+            max-width: calc(100% - 4cm);
+            margin: 0 auto;
             padding: 20px 0;
             border-bottom: 1px solid #ffffff;
         }
@@ -49,8 +52,8 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 20px 0; /* Remove horizontal padding for alignment */
-            max-width: 1200px; /* Match the header width */
+            padding: 20px 60px;
+            max-width: 1200px;
             margin: 0 auto;
             box-sizing: border-box;
         }
@@ -61,11 +64,15 @@
 
         .about {
             margin-right: 20px;
-            width: 100%; /* Allow natural alignment within the container */
         }
 
-        .about h2, .about p {
-            margin: 0; /* Remove additional margin for perfect alignment */
+        .about h2, .apply h2 {
+            font-size: 28px;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .about p, .apply p {
             text-align: left;
         }
 
@@ -73,8 +80,23 @@
             text-align: right;
         }
 
-        .apply h2, .apply p {
-            text-align: right;
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 0;
+            }
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .about, .apply {
+                max-width: 100%;
+                margin-right: 0;
+                text-align: center;
+            }
+            .apply {
+                text-align: center;
+            }
         }
     </style>
 </head>
