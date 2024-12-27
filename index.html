@@ -25,17 +25,16 @@
             box-sizing: border-box;
             background-color: #1a1a1a;
         }
-        
+
         .header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: calc(100% - 4cm); /* Full width minus 0.5cm on both sides */
+            max-width: 1200px; /* Match the main content container width */
             margin: 0 auto; /* Center the header */
             padding: 20px 0;
             border-bottom: 1px solid #ffffff;
         }
-
 
         .header h1 {
             margin: 0;
@@ -50,8 +49,8 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 20px 60px;
-            max-width: 1200px;
+            padding: 20px 0; /* Remove horizontal padding for alignment */
+            max-width: 1200px; /* Match the header width */
             margin: 0 auto;
             box-sizing: border-box;
         }
@@ -62,19 +61,19 @@
 
         .about {
             margin-right: 20px;
+            width: 100%; /* Allow natural alignment within the container */
         }
 
-        .about h2, .apply h2 {
-            font-size: 28px;
-            color: #ffffff;
-            text-align: left;
-        }
-
-        .about p, .apply p {
+        .about h2, .about p {
+            margin: 0; /* Remove additional margin for perfect alignment */
             text-align: left;
         }
 
         .apply {
+            text-align: right;
+        }
+
+        .apply h2, .apply p {
             text-align: right;
         }
     </style>
