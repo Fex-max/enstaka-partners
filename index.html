@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enstaka Partners</title>
     <style>
+        @font-face {
+            font-family: 'Avenir Next Arabic';
+            src: url('path-to-your-font-file.woff2') format('woff2');
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -23,6 +28,7 @@
         .header h1 {
             margin: 0;
             font-size: 24px;
+            font-family: 'Avenir Next Arabic', sans-serif;
             font-weight: normal;
         }
 
@@ -30,18 +36,24 @@
         .container {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start; /* Aligns sections to the top */
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .about {
+        .about, .apply {
             max-width: 600px;
         }
 
-        .about h2 {
+        .about h2, .apply h2 {
             font-size: 28px;
             color: #333;
+            text-align: left;
+        }
+
+        .about p, .apply p {
+            text-align: left;
         }
 
         .apply {
