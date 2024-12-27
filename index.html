@@ -20,20 +20,21 @@
 
         /* Header Style */
         .header-container {
-            padding: 0 10px;
+            padding: 0;
             box-sizing: border-box;
             background-color: #1a1a1a;
         }
-
+        
         .header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: calc(100% - 1cm); /* Full width minus 0.5cm on both sides */
+            margin: 0 auto; /* Center the header */
             padding: 20px 0;
             border-bottom: 1px solid #ffffff;
         }
+
 
         .header h1 {
             margin: 0;
