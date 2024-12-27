@@ -19,13 +19,19 @@
         }
 
         /* Header Style */
-        .header {
+        .header-container {
+            padding: 0 60px; /* Add padding for spacing */
+            box-sizing: border-box;
             background-color: #1a1a1a;
+        }
+
+        .header {
             border-bottom: 1px solid #ffffff;
             display: flex;
             align-items: center;
-            padding: 20px 60px; /* Adjust padding for the delicate spacing */
-            box-sizing: border-box;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0; /* Space for top and bottom */
         }
 
         .header h1 {
@@ -86,9 +92,11 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Enstaka Partners</h1>
-    </header>
+    <div class="header-container">
+        <header class="header">
+            <h1>Enstaka Partners</h1>
+        </header>
+    </div>
 
     <main class="container">
         <section class="about">
